@@ -1,0 +1,14 @@
+import os
+
+DB_USERNAME = "postgres"
+DB_PASSWORD = "1017"
+DB_HOST = "localhost"
+DB_PORT = "5432"
+DB_NAME = "powerAPI"
+
+DATABASE_URL = f"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+class Config:
+    SQLALCHEMY_DATABASE_URI = DATABASE_URL
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    JWT_SECRET_KEY = '1017300'
